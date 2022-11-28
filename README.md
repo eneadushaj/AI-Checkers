@@ -1,7 +1,6 @@
 # AI-Checkers
 Checkers Game developed for AI class at Cooper Union Fall 2020
 
-
 This Artificial intelligence Checkers program implements an iterative deepening minimax search with alpha-beta pruning. This code was created, compiled, and run in Visual Studio on a Windows computer. The program uses an ASCII text interface to display the 8x8 checkers board. The program checks for all legal moves of each piece on the board, displaying them whenever a board is printed. This looks at all possible directions the piece can move in (depending on if it’s a king or normal piece), and checks for free spaces, or for opposing players with a free space behind them, and then like a tree search, checks again from the new position, keeping track of the opposing players that move would have captured to avoid repeat moves. Additionally, this allows for the piece to end up back at the same spot, which I had trouble with. A data structure called “Move” is used, that stores the legal move from a current player’s piece, as well as the checkers board that would result if that move were selected. It also holds an integer value for the evaluation function value called “score”, and an integer value named “value” which keeps track of the amount of enemy pieces that said move would capture. This tree is constructed via the legal moves function, and is searched until a time limit is reached, or until a cutoff depth of 15 is reached. 
 The pieces are assigned values as follows: 
 •	0 = empty
@@ -26,3 +25,5 @@ The program takes advantage of terminal coloring to make the game a little more 
 This was a really difficult project, just like you said. I not only got to learn how to implement the artificial intelligence algorithms we learned in class, but I also taught myself some material on data structures and algorithms as well as learning how to code in C++. It is my favorite project that I have done while at Cooper. I learned an incredible amount and the whole process was extremely rewarding. This was a great experience. Thank you for letting me waive the prerequisite for this course.
 
 
+
+Running the code can be done with Visual Studio. Running "AI Checkers.cpp" with the auxiliary files in the folder. 
